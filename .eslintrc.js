@@ -29,5 +29,6 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "import/no-extraneous-dependencies": 0,
     "default-param-last": 0,
+    "no-unused-vars": 0,
   },
 };
