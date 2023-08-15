@@ -30,5 +30,8 @@ module.exports = {
     "import/no-extraneous-dependencies": 0,
     "default-param-last": 0,
     "no-unused-vars": 0,
+    "array-callback-return": 0,
+    "react/jsx-no-bind": 0,
+    "require-yield": 0,
   },
 };
