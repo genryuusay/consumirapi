@@ -33,5 +33,6 @@ module.exports = {
     "array-callback-return": 0,
     "react/jsx-no-bind": 0,
     "require-yield": 0,
+    "react/jsx-no-useless-fragment": 0,
   },
 };
