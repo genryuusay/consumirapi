@@ -12,14 +12,17 @@ export default function (state = initialState, action) {
       newState.botaoClicado = !newState.botaoClicado;
       return newState;
     }
+
     case types.BOTAO_CLICADO_FAILURE: {
-      console.log("Deu erro");
+      console.log("Deu erro =(");
       return state;
     }
+
     case types.BOTAO_CLICADO_REQUEST: {
       console.log("Estou fazendo a requisição");
       return state;
     }
+
     default: {
       return state;
     }
