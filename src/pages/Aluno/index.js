@@ -130,7 +130,11 @@ export default function Aluno({ match }) {
       <Title>{id ? "Edita aluno" : "Novo Aluno"}</Title>
       {id && (
         <ProfilePicture>
-          {foto ? <img src={foto} alt={nome} /> : <FaUserCircle size={180} />}
+          {foto ? (
+            <img crossOrigin="anonymous" src={foto} alt={nome} />
+          ) : (
+            <FaUserCircle size={180} />
+          )}
           <Link to={`/fotos/${id}`}>
             <FaEdit size={24} />
           </Link>

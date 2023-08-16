@@ -73,7 +73,11 @@ export default function Fotos({ match, history }) {
 
       <Form>
         <label htmlFor="foto">
-          {foto ? <img src={foto} alt="Foto" /> : "Selecionar"}
+          {foto ? (
+            <img crossOrigin="anonymous" src={foto} alt="Foto" />
+          ) : (
+            "Selecionar"
+          )}
           <input type="file" id="foto" onChange={handleChange} />
         </label>
       </Form>
